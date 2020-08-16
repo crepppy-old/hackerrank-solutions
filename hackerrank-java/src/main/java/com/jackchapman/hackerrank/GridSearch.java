@@ -14,7 +14,7 @@ public class GridSearch {
 	public static boolean gridSearch(int[][] g, int[][] p) {
 		int xOffset = 0;
 		int yOffset = 0;
-		while (yOffset + p.length > g.length) {
+		while (yOffset + p.length < g.length) {
 			// Safe to assume that, given a valid matrix, all indexes have the same length
 			if (p[0].length + xOffset > g[0].length) {
 				xOffset = 0;
